@@ -12,9 +12,14 @@ class App {
 
   //Run configuration methods on the Express instance.
   constructor() {
+    let oauthOptions = {
+      useErrorHandler: false,
+      continueMiddleware: false
+    };
     this.express = express();
     this.middleware();
     this.routes();
+
   }
 
   // Configure Express middleware.
@@ -22,6 +27,7 @@ class App {
     this.express.use(logger('dev'));
     this.express.use(bodyParser.json());
     this.express.use(bodyParser.urlencoded({ extended: false }));
+    //this.express.use(this.oauth.authorize());
   }
 
   // Configure API endpoints.
