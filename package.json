@@ -1,7 +1,7 @@
 {
   "name": "flayer",
   "version": "1.0.0",
-  "description": "Flayer RPG Game Framework",
+  "description": "Flayer Framework",
   "main": "index.js",
   "scripts": {
     "build": "gulp scripts",
@@ -10,8 +10,6 @@
   },
   "keywords": [
     "flayer",
-    "rpg",
-    "game",
     "framework"
   ],
   "author": "lluszczynski@gmail.com",
